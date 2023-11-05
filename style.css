@@ -181,6 +181,9 @@ label, .input-name, .input-num{
     }
     button{
         margin-top: 10px;
+        width:100%;
+        padding-left:5%;
+        padding-right:10%;
     } 
     .card-num{
         font-size:14px;        
@@ -193,5 +196,9 @@ label, .input-name, .input-num{
     }
     .card-cvc{
         font-size:9px;
-}
+    }
+    #completed-state{
+    padding:30% 10% 0% 5%;
+    width: 100%;
+    }  
 }
