@@ -76,7 +76,7 @@ main{
     /*display: none;*/
 }
 form{
-    font-size:8px;
+    font-size:9px;
     font-weight:bold;
     color: hsl(278, 68%, 11%);
     font-family: Space Grotesk; 
@@ -181,10 +181,7 @@ label, .input-name, .input-num{
     }
     button{
         margin-top: 10px;
-    }
-    form{
-        font-size:9px;
-    }  
+    } 
     .card-num{
         font-size:14px;        
     }
