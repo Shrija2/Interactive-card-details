@@ -1,0 +1,200 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg-main-desktop.png');
+    background-size:35% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    font-family: Space Grotesk;
+    letter-spacing: 1px;  
+}
+
+#card-section{
+    color:hsl(0, 0%, 100%);  
+}
+
+.div-card-front{
+    width:90%;
+    height:35%;
+    background-image:url('images/bg-card-front.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top:20%;
+    margin-left:30%;
+    border-radius: 3%;
+    position: relative;   
+}
+.div-card-back{
+    width:90%;
+    height:35%;
+    background-image:url('images/bg-card-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top:10%;
+    margin-left:50%;
+    border-radius: 3%;
+    display: block;
+    position: relative;
+}
+.card-logo{
+    width:60px;
+    margin:20px;
+}
+.card-num{
+    position: absolute;
+    top:55%;
+    left:8%;
+    font-size:18px;
+    letter-spacing:3px;   
+}
+.card-name{
+    position: absolute;
+    top:80%;
+    left:5%;
+    font-size:11px;
+}
+.card-date{
+    position: absolute;
+    top:80%;
+    right:5%;
+    font-size:11px;
+}
+.card-cvc{
+    position: absolute;
+    top:46%;
+    right:13%;
+    font-size:10px;
+}
+#form-section{
+    padding:20% 10% 20% 30%;
+    /*display: none;*/
+}
+form{
+    font-size:8px;
+    font-weight:bold;
+    color: hsl(278, 68%, 11%);
+    font-family: Space Grotesk; 
+    width: 70%;
+}
+input{
+    font-size:12px;
+    color: hsl(278, 68%, 11%);
+    width: 100%;
+    border-radius: 5px;
+    border-color: hsl(270, 3%, 87%);
+    border:solid 1px;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom: 10px;
+    font-family: Space Grotesk;
+}
+.input-mm, .input-yy{
+    width: 25%;
+}
+p{
+    color:hsl(0, 100%, 66%); 
+}
+button{
+    background-color:hsl(278, 68%, 11%) ;
+    color:hsl(0, 0%, 100%);
+    width:100%;
+    margin-top: 30px;
+    padding:8px;
+    border-radius: 5px;
+    border:none;
+    font-size: 12px;
+    font-family: Space Grotesk;
+}
+
+label, .input-name, .input-num{
+    display: block;
+}
+.form-flex{
+    display: flex;
+}
+.red-border{
+    border-color:hsl(0, 100%, 66%);
+}
+
+/**COMPLETED SECTION**/
+#completed-state{
+    display: none;
+    padding:20% 10% 20% 40%;
+    justify-content: center;
+    text-align: center;
+    width: 45%;
+}
+#completed-state img{
+    width:60px;
+}
+#completed-state h1{
+    font-weight: 500;
+}
+#completed-state p{
+    font-weight: 500;
+    font-size: 14px;
+    color:hsl(279, 6%, 55%);
+}
+/*MOBILE VERSION*/
+@media (max-width:600px){
+    body{
+        background-size:100% 35%; 
+        background-position: top;
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        grid-template-columns: none;
+        grid-template-rows: 30% 70%;
+        font-family: Space Grotesk;
+        letter-spacing: 1px;
+    }
+    .div-card-front{
+        width:280px;
+        height:150px;
+        margin-top:36%;
+        margin-left:5%;     
+    }
+    .div-card-back{
+        width:280px;
+        height:150px;
+        background-image:url('images/bg-card-back.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index:-1;
+        border-radius: 3%;
+        position: absolute;
+        top:2%;
+        margin-left:20%;   
+    }
+    #form-section{
+        padding:30% 10% 0% 5%;
+    }
+    form{
+        width:100%;
+    }
+    button{
+        margin-top: 10px;
+    }
+    form{
+        font-size:9px;
+    }  
+    .card-num{
+        font-size:14px;        
+    }
+    .card-name{
+        font-size:8px;
+    }
+    .card-date{
+        font-size:8px;
+    }
+    .card-cvc{
+        font-size:9px;
+}
+}
